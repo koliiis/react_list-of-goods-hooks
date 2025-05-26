@@ -40,7 +40,7 @@ function getPreparedGoods(
           return good1.localeCompare(good2);
 
         case SortType.Length:
-          return good1[sortField] - good2[sortField];
+          return good1.length - good2.length;
 
         case SortType.Default:
         default:
